@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drum Machine</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+  <div class="controls">
+    <label>
+      Power
+      <input type="checkbox" id="powerToggle" checked>
+    </label>
+    <label>
+      Volume
+      <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+    </label>
+  </div>
+  <div id="display">Hit a pad!</div>
+  <div class="pads">
+    <button class="pad pad1" data-key="Q" data-sound="Kick">Q</button>
+    <button class="pad pad1" data-key="W" data-sound="Snare">W</button>
+    <button class="pad pad1" data-key="E" data-sound="HiHat">E</button>
+    <button class="pad pad2" data-key="A" data-sound="Tom">A</button>
+    <button class="pad pad2" data-key="S" data-sound="Clap">S</button>
+    <button class="pad pad2" data-key="D" data-sound="Ride">D</button>
+    <button class="pad pad3" data-key="Z" data-sound="OpenHat">Z</button>
+    <button class="pad pad3" data-key="X" data-sound="Shaker">X</button>
+    <button class="pad pad3" data-key="C" data-sound="Cowbell">C</button>
+  </div>
+</div>
+
+<!-- Better direct sound files (replace with yours or CC-licensed) -->
+<audio id="Kick" src="kick.mp3"></audio>
+<audio id="Snare" src="snare.mp3"></audio>
+<audio id="HiHat" src="hihat.mp3"></audio>
+<audio id="Tom" src="tom.mp3"></audio>
+<audio id="Clap" src="clap.mp3"></audio>
+<audio id="Ride" src="ride.mp3"></audio>
+<audio id="OpenHat" src="openhat.mp3"></audio>
+<audio id="Shaker" src="shaker.mp3"></audio>
+<audio id="Cowbell" src="cowbell.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
